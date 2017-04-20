@@ -1,0 +1,93 @@
+input[type="submit"] {
+  @include btn($link, #fff, darken($link, 5%), 3px, 85%);
+  font-family: $font-family;
+  display: inline-block;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+
+input#edit-reset[type="submit"] {
+  @include btn($error, #fff, darken($error, 5%), 3px, 85%);
+  font-family: $font-family;
+  display: inline-block;
+  box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
+}
+
+
+.form-actions {
+  a {
+    display: inline-block;
+    margin-left: 1em;
+  }
+}
+
+.flag-outer-wl-exhibitor,.flag-outer-walking-list-product, .flag-walking-list-booth-listing, .flag-walking-list-product {
+  a {
+    @include btn($color-two, #fff, darken($color-two, 5%), 3px, 85%);
+    &.unflag-action {
+        background: #cd0a0a;
+        border: 1px solid #cd0a0a;
+    }
+  }
+}
+
+.walking-list-btn {
+  a {
+    @include btn($color-two, #fff, darken($color-two, 5%), 3px, 85%);
+    &.unflag-action {
+        background: #cd0a0a;
+        border: 1px solid #cd0a0a;
+    }
+  }
+}
+
+.logged-in {
+  .walking-list-btn-anon {
+    display: none !important;
+  }
+}
+
+
+// add flag
+.page-flag-confirm {
+  #flag-confirm {
+    input[type="submit"] {
+      @include btn($color-two, #fff, darken($color-two, 5%), 3px, 85%);
+    }
+  }
+}
+// remove flag
+.page-flag-confirm-unflag {
+  #flag-confirm {
+    input[type="submit"] {
+      @include btn(#cd0a0a, #fff, darken(#cd0a0a, 5%), 3px, 85%);
+    }
+  }
+}
+
+// Connect Btn
+.connect-btn {
+  display: inline-block;
+  width: 100%;
+  margin: .75em 0;
+  a {
+    @include btn($color-one, #fff, darken($color-one, 5%), 3px, 85%);
+  }
+}
+
+.flag-throbber {
+  display: none;
+}
+
+// Bookmarklet Button
+.btn-wrapper a.bookmarklet {
+    background-color: #0094a6;
+    border: 1px solid #007d8c;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    padding: .45em 1.5em;
+    font-size: 90%;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+}

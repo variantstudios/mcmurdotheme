@@ -1,0 +1,36 @@
+header.site-header {
+  @include clearfix;
+  position: relative;
+  background: #fff;
+  padding: 1em 0;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    padding: .5em 0 .5em;
+    z-index: 11;
+  }
+}
+
+
+.logo {
+  //width: 50px;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3em;
+  }
+}
+
+
+
+.header-blocks {
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+
+.top-nav-container {
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    float: right;
+  }
+}

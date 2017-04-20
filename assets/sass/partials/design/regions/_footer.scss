@@ -1,0 +1,44 @@
+footer {
+  background: $footer-bg;
+  text-align: center;
+  padding: 2em 0;
+}
+
+
+.footer-wrapper {
+    color: #fff;
+    font-size: .8em;
+}
+.footer-wrapper a {
+    color: #fff;
+}
+.footer-wrapper ul {
+    margin: 0;
+    padding: 0;
+}
+.footer-wrapper li {
+    display: inline-block;
+}
+/* Tablet and up */
+@media (min-width: 50em) {
+    .footer-wrapper {
+        line-height: 3em;
+    }
+    .footer-wrapper li {
+        margin-left: 1em;
+    }
+    .footer-left {
+        width: 59%;
+        text-align: left;
+        display: inline-block;
+    }
+    .informa-footer-img {
+        float: left;
+        margin-right: 1.5em;
+    }
+    .footer-right {
+        text-align: right;
+        width: 39%;
+        display: inline-block;
+    }
+}

@@ -1,0 +1,29 @@
+main#content {
+  @include clearfix;
+  padding: 2em 0;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    padding: 3em 0;
+  }
+  
+}
+.main-content-wrap {
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    @include grid-span(8,5);
+  }
+  @include breakpoint($bp-large, $no-query: '.no-mq') {
+    @include grid-span(8.25,4.25);
+  }
+}
+
+.no-sidebars {
+  .main-content-wrap {
+    width: 100%;
+    //margin: 0 auto;
+    max-width: 1000px;
+    float: none;
+  }
+}
+
+main, section, header, footer, aside {
+  display: block;
+}

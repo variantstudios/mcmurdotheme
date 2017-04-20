@@ -1,0 +1,72 @@
+.block-facetapi {
+  margin-bottom: 2em;
+  background: #fff;
+  box-shadow: 1px 1px 12px rgba(0,0,0,0.15);
+
+  padding: 1em;
+  border-radius: 3px;
+  //border: 1px solid #ccc;
+  h2 {
+    font-size: 1em;
+    margin: 0;
+    margin: -1rem -1rem 1rem;
+    padding: 1em 1em .85em;
+    background: rgba(64,150,238,1);
+    color: #fff;
+    border-radius: 3px 3px 0 0;
+    text-transform: uppercase;
+    font-family: 'proxima-nova';
+    box-shadow: 0 1px 7px rgba(0,0,0,0.1);
+    line-height: 1;
+  }
+  ul {
+    padding: 0;
+    margin: .5em 0 0;
+    list-style: none;
+    font-size: 0.9em;
+    li {
+      list-style: none;
+          padding: 0 0 3px;
+    }
+  }
+  .facetapi-limit-link {
+    display: block;
+    margin-top: 1em;
+    font-weight: 700;
+  }
+  .facetapi-slider-min {
+        width: 9%;
+    font-size: .9em;
+    vertical-align: middle;
+    display: inline-block;
+        font-weight: 700;
+  }
+  .facetapi-slider-max {
+        float: right;
+    margin-right: -3px;
+    width: 9%;
+    font-size: .9em;
+    vertical-align: middle;
+    display: inline-block;
+        font-weight: 700;
+  }
+  .facetapi-slider {
+        width: 60%;
+    margin-left: 10%;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  input[type="checkbox"] {
+    font-size: 10px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1em;
+  }
+  a.facetapi-checkbox {
+        text-decoration: none;
+    color: inherit;
+    font-size: 14px;
+        display: inline-block;
+    vertical-align: middle;
+  }
+}

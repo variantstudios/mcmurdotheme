@@ -1,0 +1,170 @@
+.main-nav-container {
+  background: #efefef;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#efefef+0,ffffff+100 */
+background: rgb(239,239,239); /* Old browsers */
+background: -moz-linear-gradient(top,  rgba(239,239,239,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  rgba(239,239,239,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  rgba(239,239,239,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+
+  //box-shadow: 0px 2px 13px 0px rgba(0,0,0,0.15);
+  border-bottom: 1px solid #efefef;
+  z-index: 10;
+  position: relative;
+  .main-nav {
+    @include breakpoint($bp-medium-down) {
+      display: none;
+    }
+  }
+
+}
+
+.mm-menu {
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    display: none;
+  }
+}
+
+
+.main-nav {
+  font-family: $heading-font-family;
+  padding: 0em 0em 0;
+  font-size: 110%;
+  @include clearfix;
+  font-weight: 700;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    font-size: 90%;
+    margin-top: 35px;
+  }
+  @include breakpoint($bp-large, $no-query: '.no-mq') {
+    font-size: 125%;
+    margin-top: 26px;
+  }
+  ul.menu {
+    margin: 1em 0 0;
+    padding: 0;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      margin: 0;
+/*
+      ul {
+        position: absolute;
+      }
+*/
+    }
+  }
+  ul.menu li.leaf, ul.menu li, ul.menu li.expanded {
+    list-style: none;
+    padding:0;
+    margin: 0;
+    position: relative;
+    background: none;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      display: inline-block;
+    }
+    li {
+      padding: 0;
+      font-size: 85%;
+      border-bottom: 0;
+        margin: 0;
+
+    }
+  }
+  a, a:visited, span {
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      text-decoration: none;
+    display: block;
+    margin: 0;
+    color: inherit;
+      cursor: pointer;
+      padding: 0 .35em;
+    }
+  }
+  .sf-menu.sf-style-white a {
+    border: 0;
+    border-right: 0;
+  }
+    
+  .sf-menu.sf-horizontal.sf-shadow ul, .sf-menu.sf-vertical.sf-shadow ul, .sf-menu.sf-navbar.sf-shadow ul ul {
+    background: #fafafa !important;
+    border-radius: 0;
+    padding: 0 !important;
+  }
+}
+// Menu Icon
+.hamburger-menu  {
+  position: absolute;
+  z-index: 10;
+  right: 2em;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    display: none;
+  }
+}
+
+$bar-width: 30px;
+$bar-height: 4px;
+$bar-spacing: 10px;
+
+.hamburger-menu {
+  position: absolute;
+  cursor: pointer;
+  right: 2em;
+  margin-top: 2em;
+  a {
+    display: block;
+    height: 30px;
+  }
+}
+
+.hamburger-menu .bar,
+.hamburger-menu .bar:after,
+.hamburger-menu .bar:before {
+  width: $bar-width;
+  height: $bar-height;
+}
+
+.hamburger-menu .bar {
+  position: relative;
+  transform: translateY($bar-spacing);
+  background: $black;
+  transition: all 0ms 300ms;
+}
+
+.hamburger-menu .bar:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: $bar-spacing;
+  background: $black;
+  transition: bottom 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.hamburger-menu .bar:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: $bar-spacing;
+  background: $black;
+  transition: top 300ms 300ms cubic-bezier(0.23, 1, 0.32, 1), transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+
+// MMenu Overrides
+
+.mm-menu.wrap {
+  margin: 0;
+  .mm-title {
+    padding: .5em 0;
+    color: #fff !important;
+    font-size: 0.9em;
+  }
+  .mm-navbar {
+    height: 50px;
+    line-height: 30px;
+  }
+  .login-link-mobile {
+    margin: 0;
+  }
+}
+.mm-panels>.mm-panel>.mm-listview:first-child, .mm-panels>.mm-panel>.mm-navbar+.mm-listview {
+  margin-top: -10px;
+}

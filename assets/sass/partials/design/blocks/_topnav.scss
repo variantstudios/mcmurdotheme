@@ -1,0 +1,174 @@
+.header-blocks {
+  .show-info-location {
+    margin: 0;
+  }
+  .show-info-date {
+    margin: 0;
+    font-weight: normal;
+    font-size: 1.2em;
+  }
+  .block {
+    @include breakpoint($bp-xlarge, $no-query: '.no-mq') {
+      display: inline-block;
+      vertical-align: top;
+    }
+    .login-btn {
+      display: inline-block;
+      margin: 1em .15em 0;
+      a {
+        text-transform: uppercase;
+        color: initial;
+        display: inline-block;
+        padding: .35em .75em .35em 0em;
+        text-decoration: none;
+        font-size: .9em;
+      }
+      &.join a {
+        background: $color-two;
+        color: #fff;
+        padding: .35em .75em;
+      }
+    }
+  }
+}
+
+
+.open-account-menu {
+  // text-transform: uppercase;
+  // font-size: 0.9em;
+  // margin: 1em 0 1em;
+  // cursor: pointer;
+  // text-align: center;
+  // @include breakpoint($bp-medium, $no-query: '.no-mq') {
+  //   margin: 2em 0 1em;
+  //   text-align: right;
+  // }
+  // &:before {
+  //   content: '';
+  //   height: 15px;
+  //   width: 15px;
+  //   background: url('../images/icons/gear.png') no-repeat;
+  //   display: inline-block;
+  //   margin-right: .5em;
+  // }
+}
+
+#block-system-user-menu {
+  #block-system-user-menu {
+    display: none !important;
+  }
+}
+#block-system-user-menu .content > ul.menu {
+
+  width: 100%;
+  background: #fff;
+  z-index: 99999;
+  padding: 1em 0;
+  margin: 0;
+  //border: 1px solid #ccc;
+  font-size: 90%;
+  right: 0;
+  border-radius: 3px;
+  text-align: center;
+  @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    text-align: right;
+    padding: 1.5em 0 0;
+  }
+  li {
+    list-style: none;
+    padding: .25em .75em .25em 0;
+    margin: 0;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: inherit;
+    cursor: pointer;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      position: relative;
+    }
+    span.nolink {
+        text-transform: none;
+        display: block;
+        font-weight: 700;
+        padding-top: .7em;
+        padding-bottom: 0.2em;
+        border-top: 1px solid #ccc;
+        margin-top: .7em;
+        cursor: default;
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      color: inherit;
+    }
+    ul {
+      li {
+        padding: 0.1em 0;
+        display: block;
+        a {
+          text-transform: none;
+        }
+      }
+    }
+    &:hover {
+      ul {
+        opacity: 1;
+        visibility: visible;
+        transition: all .4s linear;
+      }
+    }
+  }
+  hr {
+    border: 0;
+    background: #ccc;
+  }
+  .open-account-menu {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+}
+
+.logged-in {
+  #block-system-user-menu .content > ul.menu {
+  li.first {
+    opacity: 0;
+    position: absolute;
+    padding: 0.5em 1em 0.5em;
+    width: 100%;
+    background: #fff;
+    box-shadow: 0px 0px 8px rgba(0,0,0,0.35);
+    margin-top: 3em;
+    visibility: hidden;
+    transition: all .3s linear;
+    text-align: left;
+    left: 0;
+    text-transform: none;
+    z-index: 999;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      width: 250px;
+    }
+    li.first {
+      opacity: 1;
+      visibility: visible;
+      box-shadow:none;
+      position: relative;
+      margin-top: 0;
+      width: auto;
+      padding: 0.1em 0;
+    }
+    a {
+      text-transform: capitalize;
+    }
+  }
+
+}
+}
+.logged-in #block-system-user-menu.close-account-menu .content > ul.menu .open-account-menu > li.first {
+  opacity: 1;
+  visibility: visible;
+  transition: all .3s linear;
+}
