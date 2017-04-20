@@ -70,3 +70,17 @@
     vertical-align: middle;
   }
 }
+
+#block-block-10 {
+  .content {
+    a {
+      border: 1px solid $error;
+      color: $error;
+      text-decoration: none;
+          font-family: 'proxima-nova';
+          text-transform: lowercase;
+          text-align: center;
+          display: block;
+    }
+  }
+}
