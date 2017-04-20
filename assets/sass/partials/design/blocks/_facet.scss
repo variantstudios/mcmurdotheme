@@ -1,4 +1,4 @@
-.block-facetapi {
+.block-facetapi, #block-views-exp-all-content-indexed-page {
   margin-bottom: 2em;
   background: #fff;
   box-shadow: 1px 1px 12px rgba(0,0,0,0.15);
@@ -6,7 +6,7 @@
   padding: 1em;
   border-radius: 3px;
   //border: 1px solid #ccc;
-  h2 {
+  h2, label {
     font-size: 1em;
     margin: 0;
     margin: -1rem -1rem 1rem;
