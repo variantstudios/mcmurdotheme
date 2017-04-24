@@ -32,9 +32,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', end
   font-size: 110%;
   @include clearfix;
   font-weight: 700;
+  display: none;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     font-size: 90%;
     margin-top: 35px;
+    display: block;
   }
   @include breakpoint($bp-large, $no-query: '.no-mq') {
     font-size: 125%;

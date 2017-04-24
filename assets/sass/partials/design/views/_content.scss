@@ -14,6 +14,10 @@
  padding: 1em 2em 3em;
  .field-name-field-content-photo {
    margin: -1em -2em 2em;
+   img {
+         display: block;
+    margin: 0 auto;
+   }
  }
  .field {
    padding-bottom: 1em;
@@ -31,6 +35,8 @@
 .field-label-inline .field-label, .field-label-inline .field-items {
     float: none; 
 }
+
+
 
 }
 
