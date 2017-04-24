@@ -40,7 +40,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efefef', end
   }
   @include breakpoint($bp-large, $no-query: '.no-mq') {
     font-size: 125%;
-    margin-top: 26px;
+    margin-top: 18px;
   }
   ul.menu {
     margin: 1em 0 0;

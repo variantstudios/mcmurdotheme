@@ -45,27 +45,29 @@
 #cboxPrevious {
   clip: inherit;
       top: 200px;
-    width: 100px;
-    height: 100px;
+    width: 14px;
+    height: 20px;
     z-index: 9999;
-    left: 0px;
+    left: 20px;
     position: fixed !important;
     display: inline-block;
     background: url('../images/prev.png') no-repeat center;
     font-size: 0;
+    background-size: 100%;
   
 }
 #cboxNext {
     clip: inherit;
       top: 200px;
-    width: 100px;
-    height: 100px;
+    width: 14px;
+    height: 20px;
     z-index: 9999;
-    right: 0px;
+    right: 20px;
     position: fixed !important;
     font-size: 0;
     display: inline-block;
         background: url('../images/next.png') no-repeat center;
+    background-size: 100%;
 
 }
 
