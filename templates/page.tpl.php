@@ -53,7 +53,6 @@
   <div class="preface cleafix">
     <div class="wrap">
       <?php print render($page['preface']); ?>
-      <img src="map.png" />
     </div>
     </div>
 
