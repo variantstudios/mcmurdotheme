@@ -44,12 +44,12 @@
 
 #cboxPrevious {
   clip: inherit;
-      top: 50px;
+      top: 40px;
     width: 14px;
     height: 20px;
     z-index: 9999;
-    left: -30px;
-    //position: fixed !important;
+    left: 30px;
+    position: fixed !important;
     display: inline-block;
     background: url('../images/prev.png') no-repeat center;
     font-size: 0;
@@ -58,12 +58,12 @@
 }
 #cboxNext {
     clip: inherit;
-      top: 50px;
+      top: 40px;
     width: 14px;
     height: 20px;
     z-index: 9999;
-    right: -30px;
-    //position: fixed !important;
+    right: 30px;
+    position: fixed !important;
     font-size: 0;
     display: inline-block;
         background: url('../images/next.png') no-repeat center;
@@ -76,15 +76,3 @@
     opacity: 1 !important;
 }
 
-.node-type-photographs {
-  .site-wrapper {
-    &:before {
-      content: '';
-      background: rgba(0, 0, 0, 0.25);
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      z-index: 8;
-    }
-  }
-}
