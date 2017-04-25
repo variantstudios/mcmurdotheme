@@ -1,7 +1,11 @@
 footer {
-  background: $footer-bg;
+  background: #fff;
   text-align: center;
   padding: 2em 0;
+  border-top: 5px solid #000;
+  a {
+    text-decoration: none;
+  }
 }
 
 
@@ -11,6 +15,7 @@ footer {
 }
 .footer-wrapper a {
     color: #fff;
+    
 }
 .footer-wrapper ul {
     margin: 0;
