@@ -44,12 +44,12 @@
 
 #cboxPrevious {
   clip: inherit;
-      top: 200px;
+      top: 50px;
     width: 14px;
     height: 20px;
     z-index: 9999;
-    left: 20px;
-    position: fixed !important;
+    left: -30px;
+    //position: fixed !important;
     display: inline-block;
     background: url('../images/prev.png') no-repeat center;
     font-size: 0;
@@ -58,12 +58,12 @@
 }
 #cboxNext {
     clip: inherit;
-      top: 200px;
+      top: 50px;
     width: 14px;
     height: 20px;
     z-index: 9999;
-    right: 20px;
-    position: fixed !important;
+    right: -30px;
+    //position: fixed !important;
     font-size: 0;
     display: inline-block;
         background: url('../images/next.png') no-repeat center;
