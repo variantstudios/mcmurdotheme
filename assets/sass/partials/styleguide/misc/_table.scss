@@ -5,12 +5,10 @@ table {
   tr {
     padding: 0;
     &.odd {
-      background-color: $table-row-odd;
-      border-bottom: 0;
+      background: none;
     }
     &.even {
-      background-color: $table-row-even;
-      border-bottom: 0;
+      background: none;
     }
   }
   td {
@@ -22,6 +20,10 @@ table {
   th {
     border-bottom: 1px solid #ccc;
     padding-bottom: .5em;
+  }
+  thead th {
+    padding-bottom: 1.5em;
+    font-weight: normal;
   }
 }
 

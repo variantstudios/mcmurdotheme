@@ -1,10 +1,9 @@
 .block-facetapi, #block-views-exp-all-content-indexed-page {
   margin-bottom: 2em;
   background: #fff;
-  box-shadow: 1px 1px 12px rgba(0,0,0,0.15);
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
 
   padding: 1em;
-  border-radius: 3px;
   //border: 1px solid #ccc;
   input[type="text"] {
     width: 100%;
@@ -16,10 +15,9 @@
     padding: 1em 1em .85em;
     background: rgba(64,150,238,1);
     color: #fff;
-    border-radius: 3px 3px 0 0;
-    text-transform: uppercase;
     box-shadow: 0 1px 7px rgba(0,0,0,0.1);
     line-height: 1;
+    font-weight: normal;
   }
   ul {
     padding: 0;
