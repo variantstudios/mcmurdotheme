@@ -27,14 +27,15 @@
 
   </div>
 </header>
+  <?php if ($page['main_nav']): ?>
 
 <div class="main-nav-container">
-  <?php if ($page['main_nav']): ?>
     <nav class="main-nav wrap" id="menu" role="navigation">
       <?php print render($page['main_nav']); ?>
     </nav>
-  <?php endif; ?>
 </div>
+  <?php endif; ?>
+
 
 <?php if ($page['search']): ?>
   <div class="search-region cleafix">
