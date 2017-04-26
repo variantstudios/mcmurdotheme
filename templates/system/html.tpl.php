@@ -60,6 +60,8 @@
     <!--[if lt IE 9]>
     <script src="<?php print $GLOBALS['base_url'] . '/' . drupal_get_path('theme', 'mcmurdo'); ?>/htmlshim/dist/html5shiv.js"></script>
     <![endif]-->
+    <script src="https://use.fontawesome.com/7bc3d6bbd4.js"></script>
+
   </head>
   <body class="<?php print $classes; ?> <?php print $attributes;?>">
     <div id="skip-link">
