@@ -2,6 +2,22 @@
   .views-field-title{ 
     //font-weight: 700;
   }
+  .view-header {
+    ul {
+      padding: 0;
+      margin: 0 0 2em;
+      li {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        padding-right: 2em;
+        a {
+          text-decoration: none;
+          color: #0f7abd !important;
+        }
+      }
+    }
+  }
 }
 
 #colorbox {
