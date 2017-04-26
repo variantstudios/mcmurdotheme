@@ -26,7 +26,7 @@
     $('.open-account-menu').click(function() {
       $(".logged-in #block-system-user-menu").toggleClass('close-account-menu');
     });
-
+    
 
     // Mobile Navigation
 
