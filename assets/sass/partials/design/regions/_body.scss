@@ -9,6 +9,12 @@ body {
   margin: 0;
   padding: 0 0;
   background-color: $site-bg;
+      background-color: #efefef;
+        background: url('../images/csu-bg.jpg') no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
    // overflow-x: hidden;
   }
@@ -26,4 +32,10 @@ body {
 html body.admin-menu {
     margin-top: 30px !important;
     position: relative;
+}
+
+.mm-page {
+      margin: 2em;
+    box-shadow: 0 0 12px rgba(0,0,0,0.3);
+    border-radius: 3px;
 }

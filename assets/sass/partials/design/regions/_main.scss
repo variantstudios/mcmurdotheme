@@ -1,6 +1,7 @@
 main#content {
   @include clearfix;
   padding: 2em 0;
+  background: rgba(255, 255, 255, 0.92);
   @include breakpoint($bp-medium, $no-query: '.no-mq') {
     padding: 3em 0;
   }
