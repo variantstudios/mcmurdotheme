@@ -79,15 +79,14 @@
 margin-top: 3em;
   .content {
     a {
-border: 2px solid #e84141;
-border-radius: 3px;
-    color: #e84141;
+  color: #fff !important;
     text-decoration: none;
-    text-transform: uppercase;
-    text-align: center;
-    display: block;
-    padding: .65em .5em .5em;
     font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    background: #f39c0b;
+    padding: .5em 1.25em;
+    border-radius: 2px;
     }
   }
 }
