@@ -56,9 +56,19 @@
     color: #a5a5a5;
     text-transform: uppercase;
     font-size: 0.9em;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+    display: inline-block;
+    white-space: 200px;
+    vertical-align: top;
+    }
+    
 }
 .field-items {
     font-size: 1.35em;
+    @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      display: inline-block;
+      vertical-align: top;
+    }
 }
 
 .field-label-inline .field-label, .field-label-inline .field-items {
