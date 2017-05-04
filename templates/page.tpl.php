@@ -6,8 +6,6 @@
 
   <div class="wrap">
     <div class="logo">
-      <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" id="logo"/>
-
         <h1 class="site-name"><a href="/" title="Home">McMurdo Dry Valleys History</h1></a>
     </div>
 
