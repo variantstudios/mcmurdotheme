@@ -47,7 +47,7 @@
     display: block;
     margin: 0 auto;
     width: 100%;
-    width: 110%;
+    width: calc(100% + 4em);
     max-width: none;
    }
  }
