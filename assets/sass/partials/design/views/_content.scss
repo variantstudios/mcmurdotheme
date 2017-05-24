@@ -62,15 +62,16 @@
    @include breakpoint($bp-medium, $no-query: '.no-mq') {
       width: 48%;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: top;
    }
  }
  .field-name-comment-btn {
    @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      width: 48%;
-      display: inline-block;
-      vertical-align: middle;
-      text-align: right;
+ width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: right;
+    padding-right: 0;
    }
    .comment a {
      color: #fff !important;
