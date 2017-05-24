@@ -42,7 +42,7 @@
 #cboxLoadedContent {
  padding: 1em 2em 3em;
  .field-name-field-content-photo {
-   margin: 1em -2em 2em;
+   margin: -1em -2em 2em;
    img {
     display: block;
     margin: 0 auto;
@@ -128,7 +128,6 @@
   width: 100%;
   padding: 0;
   img {
-    width: 100%;
   }
 }
 
