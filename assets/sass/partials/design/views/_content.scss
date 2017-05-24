@@ -50,6 +50,37 @@
  }
  .field {
    padding-bottom: 1em;
+   @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      width: 48%;
+      display: inline-block;
+      vertical-align: top;
+      padding-right: 2%;
+   }
+ }
+ .field-name-download-image {
+   @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      width: 48%;
+      display: inline-block;
+      vertical-align: middle;
+   }
+ }
+ .field-name-comment-btn {
+   @include breakpoint($bp-medium, $no-query: '.no-mq') {
+      width: 48%;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right;
+   }
+   .comment a {
+     color: #fff !important;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1rem;
+    display: inline-block;
+    background: #0f7abd;
+    padding: .5em 1.25em;
+    border-radius: 2px;
+   }
  }
  .field .field-label {
     font-weight: normal;
@@ -57,9 +88,11 @@
     text-transform: uppercase;
     font-size: 0.9em;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
-    display: inline-block;
-    width: 200px;
-    vertical-align: top;
+/*
+      display: inline-block;
+      width: 200px;
+      vertical-align: top;
+*/
     }
     
 }
@@ -118,7 +151,7 @@
 
 #cboxPrevious {
   clip: inherit;
-      top: 40px;
+      top: 50%;
     width: 14px;
     height: 20px;
     z-index: 9999;
@@ -131,7 +164,7 @@
 }
 #cboxNext {
     clip: inherit;
-      top: 40px;
+      top: 50%;
     width: 14px;
     height: 20px;
     z-index: 9999;
