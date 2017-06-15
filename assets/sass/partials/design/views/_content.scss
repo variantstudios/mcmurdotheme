@@ -107,7 +107,6 @@
 .field-items {
     font-size: 1.3em;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      display: inline-block;
       vertical-align: top;
       overflow: hidden;
       float: none;
@@ -115,7 +114,6 @@
 }
 
 .field-label-inline .field-label, .field-label-inline .field-items {
-    float: none; 
 }
 .download-btn {
   color: #fff !important;
