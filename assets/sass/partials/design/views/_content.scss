@@ -60,10 +60,7 @@
  .field {
    padding-bottom: 1em;
    @include breakpoint($bp-medium, $no-query: '.no-mq') {
-      width: 48%;
-      display: inline-block;
-      vertical-align: top;
-      padding-right: 2%;
+
    }
  }
  .field-name-download-image {
@@ -99,17 +96,21 @@
     font-size: 0.9em;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
       display: inline-block;
-      width: 100px;
+      width: 135px;
       vertical-align: top;
       margin-right: 1.5em;
+      text-align: right;
+      float: left;
     }
     
 }
 .field-items {
-    font-size: 1.35em;
+    font-size: 1.3em;
     @include breakpoint($bp-medium, $no-query: '.no-mq') {
       display: inline-block;
       vertical-align: top;
+      overflow: hidden;
+      float: none;
     }
 }
 
