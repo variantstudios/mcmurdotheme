@@ -68,7 +68,7 @@
 
 
     <?php if ($page['sidebar_first']): ?>
-      <aside class="sidebar-first" role="complementary">
+      <aside class="sidebar-first" role="complementary" id="sidebar-first">
         <?php print render($page['sidebar_first']); ?>
       </aside>
     <?php endif; ?>
@@ -85,7 +85,7 @@
     </div>
 
     <?php if ($page['sidebar_second']): ?>
-      <aside class="sidebar-second" role="complementary">
+      <aside class="sidebar-second" role="complementary" id="sidebar-second">
         <?php print render($page['sidebar_second']); ?>
       </aside>
     <?php endif; ?>
