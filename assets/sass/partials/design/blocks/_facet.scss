@@ -26,7 +26,8 @@
     font-size: 0.9em;
     li {
       list-style: none;
-          padding: 0 0 3px;
+          padding: 0 20px 3px 0;
+          position: relative;
     }
     ul {
        padding-left: 1em;
@@ -87,6 +88,14 @@
 
 .facet-is-open ul {
   display: block !important;
+}
+.open-facet {
+    position: absolute;
+    font-size: 2em;
+    right: 0;
+    top: 0;
+    line-height: 0;
+    cursor: pointer;
 }
 
 #block-block-10 {
