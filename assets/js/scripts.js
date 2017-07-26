@@ -18,6 +18,15 @@
     if ($(".contact-markup-position-right")[0]){
         $('.contact-form').addClass('contact-layout-2');
     }
+    
+    
+    //Facets Childrens
+    $('.block-facetapi ul ul').hide();
+    
+    $('.block-facetapi ul li.expanded').prepend('<div class="open-facet">+</div>');
+    $('.open-facet').click(function() {
+      $(this).parent().toggleClass('facet-is-open');
+    });    
 
 
     // User Account Menu
